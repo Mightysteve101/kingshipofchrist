@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(){
-	// add classes for mobile navigation toggling
+// add classes for mobile navigation toggling
     var CSbody = document.querySelector("body");
     const CSnavbarMenu = document.querySelector("#cs-navigation");
     const CShamburgerMenu = document.querySelector("#cs-navigation .cs-toggle");
@@ -23,19 +23,6 @@ document.addEventListener("DOMContentLoaded", function(){
             csUL.setAttribute('aria-expanded', 'false');
         }
     }
-
-    // This script adds a class to the body after scrolling 100px
-    // and we used these body.scroll styles to create some on scroll 
-    // animations with the navbar
-    
-    document.addEventListener('scroll', (e) => { 
-        const scroll = document.documentElement.scrollTop;
-        if(scroll >= 100){
-    document.querySelector('body').classList.add('scroll')
-        } else {
-        document.querySelector('body').classList.remove('scroll')
-        }
-    });
 
     // mobile nav toggle code
     const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropdown'));
