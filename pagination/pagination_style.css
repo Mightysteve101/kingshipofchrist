@@ -1,0 +1,89 @@
+/*****STILL NEED TO UPDATED BEFORE FOR ACTIVE AND HOVER THE CIRCLE IS NOT CORRECT*******/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/**************************/
+/********Pagination********/
+/**************************/
+#pagination-1234 .cs-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+    border-radius: 6px;
+}
+
+.pagination .cs-li{
+    display: inline-block;
+    margin: 0 10px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 45px;
+    cursor: pointer;
+    position: relative;
+}
+
+.pagination .cs-li:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.pagination .cs-li:hover:before{
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.pagination .cs-li.cs-active:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.pagination .cs-li-link{
+    text-decoration: none;
+    color: black;
+}
+
+
+.btn1, .btn2{
+    display: inline-flex;
+    align-items: center;
+    font-size: 22px;
+    color: #383838;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.btn1 img{
+    width: 24px;
+    margin-right: 15px;
+    transform: rotate(180deg);
+}
+
+.btn2 img{
+    width: 24px;
+    margin-left: 15px;
+}
