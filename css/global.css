@@ -149,7 +149,7 @@ html {
     }
 
         #cs-navigation .cs-logo {
-        width: 9.1875rem;
+        width: 5.1875rem;
         height: auto;
         margin: 0 auto 0 0;
         padding: 0;
@@ -378,16 +378,7 @@ html {
         display: none;
     }
     #cs-navigation .cs-logo {
-        width: 18.4%;
-        max-width: 12.3125rem;
-        height: 3.75rem;
-        /* margin-right auto pushes everything away from it to the right */
-        margin: 0 auto 0 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 100;
+        display: none;
     }
     #cs-navigation .cs-logo img {
         width: 100%;
