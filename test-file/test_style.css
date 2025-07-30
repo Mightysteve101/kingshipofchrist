@@ -647,6 +647,19 @@ html {
     gap: clamp(2.5rem, 4vw, 4rem);
     position: relative;
   }
+
+  #content-page-1533 .cs-container-link {
+    width: 100%;
+    max-width: 57rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* 40px - 64px */
+    gap: clamp(2.5rem, 4vw, 4rem);
+    position: relative;
+  }
+
   #content-page-1533 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
@@ -753,6 +766,12 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  #content-page-1533 .cs-container-link {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    max-width: clamp(26.00rem, 28.82rem, 31.82rem);
   }
   #content-page-1533 .cs-content {
     width: 60%;

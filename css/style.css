@@ -23,6 +23,18 @@
     gap: clamp(2.5rem, 4vw, 4rem);
     position: relative;
   }
+  #content-page-1533 .cs-container-link {
+    width: 100%;
+    max-width: 57rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* 40px - 64px */
+    gap: clamp(2.5rem, 4vw, 4rem);
+    position: relative;
+  }
+
   #content-page-1533 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
@@ -71,7 +83,7 @@
   }
   #content-page-1533 .cs-no-margin {
     margin: 0;
-       padding: 0;
+    padding: 0;
   }
   #content-page-1533 .cs-color {
     color: var(--primary);
@@ -121,7 +133,35 @@
     top: 0.625rem;
     left: -0.75rem;
   }
+  #content-page-1533 .cs-topper{
+    color: var(--secondary);
+  }
+  #content-page-1533 .cs-content-link-next > a{
+    text-decoration: none;
+    color: var(--bodyTextColor);
+  }
+
+  #content-page-1533 .cs-content-link-next > a:before {
+    content: "";
+    width: 0%;
+    height: 1px;
+    background: currentColor;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    bottom: -2px;
+    left: 0;
+    transition: width 0.3s;
+    }
+    #content-page-1533 .cs-content-link-next > a:hover {
+      color: var(--bodyTextColor);
+    }
+    #content-page-1533 .cs-content-link-next > a:hover:before {
+      width: 100%;
+    }
+
 }
+
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
@@ -129,6 +169,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  #content-page-1533 .cs-container-link {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    max-width: clamp(25.00rem, 27.82rem, 31.82rem);
   }
   #content-page-1533 .cs-content {
     width: 60%;
