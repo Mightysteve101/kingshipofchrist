@@ -537,6 +537,12 @@ html {
     #cs-navigation .cs-nav-button {
         line-height: 2.875rem;
     }
+
+    #cs-navigation .top-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
                                 
